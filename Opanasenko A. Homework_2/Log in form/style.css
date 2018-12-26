@@ -1,0 +1,88 @@
+* {box-sizing: border-box;}
+
+html{
+   font-size: 14px; 
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+a {text-decoration: none;}
+
+body, h1, h2, h3, h4, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6a62d2;
+}
+
+
+.log_form {
+    width: 421.7px;
+    min-height: 413.4px;
+    background-color: #ffffff;
+    border-radius: 5.5px;
+    font-family: Lato;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*top:93px;
+    left:189px; */
+    padding: 44.5px;
+  
+}
+
+.title{
+    font-family: Lato;
+    color: #444444;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 36.5px;
+}
+
+.text-field{
+    width: 100%;
+    border-radius: 2.2px;
+    border: solid 0.6px rgba(208, 208, 208, 0.5);
+    background-color: #e5e9ed;
+    padding-top: 17.6px;
+    padding-bottom: 19.5px;
+    padding-left: 22px;
+    margin-bottom: 14.2px;
+}
+
+.checkbox {
+    margin-right: 14px;
+    background-color: #746bde;
+
+}
+.keepme p{color: #787e8c;}
+
+
+.btn-submit {
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 2.2px;
+    border: none;
+    outline: none;
+    background-color: #746bde;
+    color: #ffffff;
+    font-family: Lato;
+}
+
+.remember {
+    margin-bottom: 35px;
+    color: #787e8c;
+    font-family: Lato;
+}
+
+.forgot_psw{
+    text-align: center;
+    margin-top: 25.4px;
+    color: #787e8c;
+    font-family: Lato;
+}
+

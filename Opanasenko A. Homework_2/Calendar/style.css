@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Monaco';           /* название одно */
+    src: url(./fonts/Monaco.ttf); /* разные файлы */
+
+  }
+
+* {box-sizing: border-box;}
+
+html{
+   font-size: 14px; 
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+a {text-decoration: none;}
+
+body, h1, h2, h3, h4, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #50e3c2;
+}
+
+.container{
+    width: 343px;
+    height: 467px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-family: OpenSans;
+    box-shadow: 0 4px 10px 0 rgba(208, 208, 208, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: solid 1px #dfe4ef;
+    border-collapse:separate;
+    border-spacing: 1px;
+    padding-left: 14px;
+    padding-right: 15px;
+}
+
+
+.calendar{
+    margin-top: 20px;
+    font-family: OpenSans;
+    
+}
+
+.calendar tr{
+    
+    display: block;
+    margin-bottom: 15.1px;
+}
+
+.calendar td{
+    font-family: OpenSans;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+}
+
+.days_name td {
+    color: #7f8fa4;
+    font-family: OpenSans;
+}
+
+.month_nav{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.left_btn{
+    float: left;
+    color: #bac2c7
+}
+.right_btn{
+    float: right;
+    
+    color: #bac2c7
+}
+
+.name_month{
+    font-family: OpenSans;
+    font-size: 16px;
+    color: #2c3135;
+    font-weight: bold;
+}
+
+
+
+
+#not_this{
+background-color: #edf2f5;
+}
+td:hover{
+    background-color: #50e3c2;
+}
+/*
+.buttons{
+    font-family: Monaco;
+    margin-top: 22.6px;
+}
+.cancel{
+
+float: left;
+margin-top: 6px;
+}
+
+.cancel img{
+width: 20px;
+height: 20px;
+}
+
+.save{
+    float: right;
+}
+*/
+.menu{
+width: 320px;
+font-size: 10px;
+font-family: Monaco;
+
+}
+
+.ico img{
+    width: 20px;
+    height: 20px;
+}
+
+.ico2, .ico{
+    width: 20px;
+    height: 20px;  
+}
+.cancel2{
+    width:37px;
+    padding-right: 160px;
+}
+
+.ico{
+
+ padding-right: 10px;   
+}

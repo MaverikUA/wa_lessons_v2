@@ -1,0 +1,99 @@
+* {box-sizing: border-box;}
+
+html{
+   font-size: 14px; 
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+a {text-decoration: none;}
+
+body, h1, h2, h3, h4, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #253e52;;
+}
+
+  .container{
+   position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    width: 470px;
+  height: 348px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px 0 rgba(63, 78, 90, 0.11);
+  background-color: #ffffff;}
+
+  .title{
+    padding-top:46px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #325e82;
+  }
+
+  .message{
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+
+    line-height: 1.43;
+    
+    text-align: center;
+    color: #325e82;
+  }
+
+  .your_br{
+      display: inline-block;
+      font-family: HelveticaNeueDeskInterface;
+      font-size: 10px;
+      color: #555555;
+  }
+
+  
+
+  .browser_block{
+      margin-top: 30px;
+      text-align: center;
+  }
+
+  li:nth-child(4)
+  {
+      padding-left: 33px;
+      padding-right: 33px;
+  }
+
+  li:nth-child(2)
+  {
+      padding-left: 37.5px;
+      padding-right: 35px;
+  }
+
+  .download{
+      text-align: center;
+      margin-top: 35px;
+  }
+
+  .btn-gotit {
+    width: 104px;
+    height: 32px;
+    font-family: AvenirNext;
+    border-radius: 2px;
+    background-color: #25a0d4;
+    
+    border: none;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+  }
+
+  .btn-gotit a{color: #ffffff;}
