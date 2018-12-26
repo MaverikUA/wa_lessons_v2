@@ -1,0 +1,330 @@
+@import './mixins.scss';
+@mixin sectionContentSize {
+    max-width: 1980px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@mixin imageOtherProducts {
+    background-size: cover;
+    height: 580px;
+    background-position: top;
+}
+
+@mixin imageOtherProductsLogo {
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+$main-section-bg-color: rgb(0, 0, 0);
+.section {
+    &__content {
+        @include sectionContentSize;
+        min-height: 600px;
+        border-bottom: 6px solid rgb(255, 255, 255);
+        @include mobile {
+            min-height: 500px;
+        }
+    }
+    &__light-color {
+        background-color: rgb(250, 250, 250);
+    }
+    &__other-products {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: rgb(250, 250, 250);
+    }
+    &__other-product {
+        width: 50%;
+        border-left: 6px solid white;
+        border-right: 6px solid white;
+        border-top: 6px solid white;
+        &:nth-child(2n+1) {
+            border-left: 12px solid white;
+        }
+        @include mobile {
+            width: 100%;
+            border-left: 0px;
+            border-right: 0px;
+            &:nth-child(2n+1) {
+                border-left: 0px;
+            }
+        }
+    }
+    &_main {
+        background-color: $main-section-bg-color;
+    }
+    &__image {
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        &_iphone-xs {
+            background-image: url(../../assets/images/lesson_6/iphone_xs_0afef_large_2x.jpg);
+            background-position: bottom;
+            height: 337px;
+            @include tablet {
+                background-image: url(../../assets/images/lesson_6/iphone_xs_0afef_medium.jpg);
+                height: 350px;
+            }
+            @include mobile {
+                background-image: url(../../assets/images/lesson_6/iphone_xs_0afef_small_2x.jpg);
+                height: 350px;
+            }
+        }
+        &_iphone-xr {
+            background-image: url(../../assets/images/lesson_6/iphone_xr_5e40f_large.jpg);
+            height: 358px;
+            background-position: bottom;
+            @include tablet {
+                background-image: url(../../assets/images/lesson_6/iphone_xr_5e40f_medium.jpg);
+                height: 350px;
+            }
+            @include mobile {
+                background-image: url(../../assets/images/lesson_6/iphone_xr_5e40f_small.jpg);
+                height: 350px;
+            }
+        }
+        &_apple-watch {
+            background-image: url(../../assets/images/lesson_6/apple_watch_series_4_4aeff_large.jpg);
+            background-position: right;
+            height: 590px;
+            width: 50%;
+            @include tablet {
+                background-image: url(../../assets/images/lesson_6/apple_watch_series_4_4aeff_medium.jpg);
+                height: 590px;
+            }
+            @include mobile {
+                background-image: url(../../assets/images/lesson_6/apple_watch_series_4_4aeff_small.jpg);
+                height: 350px;
+                width: 422px;
+            }
+        }
+        &_ipad {
+            background-image: url(../../assets/images/lesson_6/ipad_pro__7b6504bb31_large.jpg);
+            background-size: auto;
+            height: 580px;
+            background-position: bottom;
+            @include tablet {
+                background-image: url(../../assets/images/lesson_6/ipad_pro__7b6504bb31_medium.jpg);
+                height: 350px;
+            }
+            @include mobile {
+                background-image: url(../../assets/images/lesson_6/ipad_pro__7b6504bb31_small.jpg);
+                height: 350px;
+            }
+        }
+        &_book-air {
+            background-image: url(../../assets/images/lesson_6/macbook_air__2f52481d_large.jpg);
+            background-size: auto;
+            height: 580px;
+            background-position: bottom;
+            @include tablet {
+                background-image: url(../../assets/images/lesson_6/macbook_air__2f52481d_medium.jpg);
+                height: 350px;
+            }
+            @include mobile {
+                background-image: url(../../assets/images/lesson_6/macbook_air__2f52481d_small.jpg);
+                height: 350px;
+            }
+        }
+        &_macmini {
+            background-image: url(../../assets/images/lesson_6/mac_mini__c1035c715c_large.jpg);
+            @include imageOtherProducts;
+            @include tablet {
+                background-image: url(../../assets/images/lesson_6/mac_mini__c1035c715c_medium.jpg);
+            }
+            @include mobile {
+                background-image: url(../../assets/images/lesson_6/mac_mini__c1035c715c_small.jpg);
+                height: 548px;
+                position: relative;
+            }
+        }
+        &_music {
+            background-image: url(../../assets/images/lesson_6/queen__543e514c_large.jpg);
+            @include imageOtherProducts;
+            @include tablet {
+                background-image: url(../../assets/images/lesson_6/queen__543e514c_medium.jpg);
+            }
+            @include mobile {
+                background-image: url(../../assets/images/lesson_6/queen__543e514c_small.jpg);
+                height: 548px;
+                position: relative;
+            }
+        }
+        &_airpods {
+            background-image: url(../../assets/images/lesson_6/airpods_ad44c_large.jpg);
+            background-size: auto;
+            height: 580px;
+            background-position: bottom;
+            @include tablet {
+                background-image: url(../../assets/images/lesson_6/airpods_ad44c_medium.jpg);
+                height: 548px;
+                position: relative;
+            }
+        }
+        &_appletv {
+            background-image: url(../../assets/images/lesson_6/give_back_large.jpg);
+            @include imageOtherProducts;
+            @include tablet {
+                background-image: url(../../assets/images/lesson_6/give_back_medium.jpg);
+                height: 350px;
+            }
+            @include mobile {
+                background-image: url(../../assets/images/lesson_6/give_back_small.jpg);
+                height: 548px;
+                position: relative;
+            }
+        }
+    }
+    &__text-block {
+        position: absolute;
+        top: 47px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        @include mobile {
+            top: 37px;
+        }
+    }
+    &__product_link {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 3;
+    }
+}
+
+.text-block {
+    width: 70%;
+    text-align: center;
+    font-family: 'SF Pro display';
+    &__header-xs {
+        background-image: url(../../assets/images/lesson_6/iphone_xs_logo_hero_a5d05_large.png);
+        height: 34px;
+        margin-bottom: 14px;
+        @include imageOtherProductsLogo;
+        @include mobile {
+            background-image: url(../../assets/images/lesson_6/iphone_xs_logo_hero_a5d05_small.png);
+            height: 25px;
+        }
+    }
+    &__header-xr {
+        background-image: url(../../assets/images/lesson_6/iphone_xr_logo_hero_9d70d_large.png);
+        height: 34px;
+        margin-bottom: 14px;
+        @include imageOtherProductsLogo;
+        @include mobile {
+            background-image: url(../../assets/images/lesson_6/iphone_xr_logo_hero_9d70d_small.png);
+            height: 25px;
+        }
+    }
+    &__header-other {
+        font-size: 40px;
+        @include tablet {
+            font-size: 32px;
+        }
+    }
+    &__header-music {
+        background-image: url(../../assets/images/lesson_6/music_47492_large.png);
+        height: 31px;
+        margin-bottom: 11px;
+        @include imageOtherProductsLogo;
+        @include mobile {
+            background-image: url(../../assets/images/lesson_6/music_47492_small.png);
+        }
+    }
+    &__header-tv {
+        background-image: url(../../assets/images/lesson_6/tv_4k__beokf3dqlzxu_large.png);
+        height: 32px;
+        @include imageOtherProductsLogo;
+    }
+    &__description {
+        font-size: 27px;
+        font-weight: 400;
+        margin-top: 6px;
+        @include tablet {
+            font-size: 24px;
+        }
+        &_other {
+            font-size: 21px;
+            margin-top: 4px;
+            @include tablet {
+                font-size: 19px;
+            }
+        }
+        @include mobile {
+            font-size: 19px;
+        }
+    }
+    &__bottom-text {
+        z-index: 9;
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        bottom: 98px;
+        font-size: 19px;
+        line-height: 1.21053;
+        font-weight: 400;
+        color: white;
+    }
+    &__link {
+        font-size: 17px;
+        color: #0070c9;
+    }
+    &__link::after {
+        content: '\203a';
+        padding-left: 5px;
+    }
+    &__link:hover {
+        text-decoration: underline;
+    }
+    &__links {
+        font-size: 21px;
+        font-weight: 400;
+        margin-top: 3px;
+    }
+    &__links a:last-child {
+        margin-left: 26px;
+    }
+    &_dark {
+        color: rgb(255, 255, 255);
+    }
+    &_other-light {
+        color: rgb(255, 255, 255);
+        top: 52px;
+    }
+    &_light {
+        color: rgb(0, 0, 0);
+        top: 50%;
+        right: 50%;
+        width: 50%;
+        left: 0;
+        transform: none;
+        @include mobile {
+            width: 100%;
+            top: auto;
+        }
+    }
+    &_other {
+        color: rgb(0, 0, 0);
+        top: 52px;
+        @include mobile {
+            top: 35px;
+        }
+    }
+}
+
+.other-link {
+    position: absolute;
+    bottom: 20px;
+    color: yellow;
+    z-index: 3;
+}

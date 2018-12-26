@@ -1,0 +1,157 @@
+@media screen and (max-width: 1440px) {
+    .film-list_title {
+    font-size: 20px;
+    }
+
+    .film-list_about {font-size:10px;}
+    .ocenka{font-size:12px;}
+}
+
+@media screen and (max-width: 1024px) {
+    .film-list_item {max-width: 32%;}
+}
+
+@media screen and (max-width: 768px) {
+    .main_title{
+        font-size: 20px;
+    }
+
+    .film-nav_menu {
+        width:60%;
+    }
+    
+    .film-info {
+        max-width:40%
+    }
+
+    .film-info_title {
+        font-size:25px;
+    }
+
+    .film-info_about {
+        font-size: 12px;
+        flex-wrap:wrap;
+    }
+
+    .film-info_actions {
+        font-size:12px;
+    }
+    
+    .film-list {
+        justify-content: space-around;
+    }
+    
+    .film-list_item {
+        max-width:35%;
+    }
+
+    .film_descrip {
+        flex-direction: column;
+    }
+    
+    .film-list_about{
+        display: flex;
+        justify-content: center;
+    }
+
+    .film-list_title {
+        text-align: center;
+    font-size: 16px;
+    }
+
+    .film-list_about {font-size:10px;}
+    .ocenka{font-size:12px;}
+
+    .logo_footer{
+        font-size: 25px;
+    }
+    
+    .menu_footer{
+        display: flex;
+        min-width: 40%;
+        justify-content: space-between;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .header_right_menu{
+        min-width:150px;
+        font-size: 12px;
+    }
+
+    .signup {
+        width: 55px;
+        font-size: 10px;
+    }
+
+    .film-info {
+        max-width: 60%;
+    }
+
+
+    .film-info_about {
+        font-size: 11px;
+        flex-wrap:wrap;
+        
+    }
+
+    .film-nav_menu {
+        flex-direction: column;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    
+    .film-nav_item {
+        font-size:14px;
+        height: 28px
+    }
+
+    
+    .film-list_item {
+        max-width:40%;
+    }
+
+    .film-list_title {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .film-list_about {
+        font-size:9.5px;
+    }
+    .ocenka {
+        width:32px;
+        height:22px;
+    }
+}
+
+@media screen and (max-width:325px) {
+    .film-nav_menu {
+        flex-direction: column;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    
+    .film-nav_item {
+        font-size:14px;
+        height: 28px
+    }
+    
+    .film-list_item {
+        max-width:60%;
+    }
+
+    .film-list_title {
+        text-align: center;
+    font-size: 16px;
+    }
+
+    .film-list_about {
+        font-size:11px;
+    }
+    .ocenka {
+        width:35px;
+        height:25px;
+    }
+}

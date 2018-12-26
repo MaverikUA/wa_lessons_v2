@@ -1,0 +1,33 @@
+.main_box {
+    width: 130px;
+    height: 400px;
+    display: flex;
+    background: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.light_item {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: gray;
+    opacity: 0.15;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.red {
+    background-color: red;
+    opacity: 1.0;
+}
+.yellow{
+    background-color: yellow;
+    opacity: 1.0;
+}.green {
+    background-color: green;
+    opacity: 1.0;
+}

@@ -1,0 +1,44 @@
+@import './fonts.scss';
+@import './mixins.scss';
+
+* {
+  box-sizing: border-box
+}
+
+html {
+  font-family: 'SF Pro display';
+  font-size: 16px;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.mobile-hidden {
+  @include mobile {
+    display: none;
+  }
+}
